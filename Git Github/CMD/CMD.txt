@@ -1,0 +1,238 @@
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github
+$ git init
+Initialized empty Git repository in C:/Users/uiu/Desktop/Git Github/.git/
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git add A.txt
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git commit -m "A.txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'uiu@LDEeee.(none)')
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ ^C
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$  git config --global user.name "Rafsan"
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ ^C
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git config --global user.email "rafsan800594@gmail.com"
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git commit -m "A.txt"
+[master (root-commit) ee2e004] A.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 A.txt
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   A.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git add A.txt
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git commit -m "A.txt ফাইল আপডেট করা হলো"
+[master 5a6de55] A.txt ফাইল আপডেট করা হলো
+ 1 file changed, 1 insertion(+)
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ ^C
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   A.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ ^C
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git diff A.txt
+diff --git a/A.txt b/A.txt
+index a6bddc4..391250c 100644
+--- a/A.txt
++++ b/A.txt
+@@ -1 +1 @@
+-ABCD
+\ No newline at end of file
++XXX
+\ No newline at end of file
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git diff HEAD A.txt
+diff --git a/A.txt b/A.txt
+index a6bddc4..391250c 100644
+--- a/A.txt
++++ b/A.txt
+@@ -1 +1 @@
+-ABCD
+\ No newline at end of file
++XXX
+\ No newline at end of file
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git restore A.txt
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   A.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git diff A.txt
+diff --git a/A.txt b/A.txt
+index a6bddc4..391250c 100644
+--- a/A.txt
++++ b/A.txt
+@@ -1 +1 @@
+-ABCD
+\ No newline at end of file
++XXX
+\ No newline at end of file
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$ git diff A.txt
+diff --git a/A.txt b/A.txt
+index a6bddc4..2141a87 100644
+--- a/A.txt
++++ b/A.txt
+@@ -1 +1 @@
+-ABCD
+\ No newline at end of file
++XXE
+\ No newline at end of file
+
+uiu@LDEeee MINGW64 ~/Desktop/Git Github (master)
+$
+
+
+
+
+uiu@LDEeee MINGW64 /
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Rafsan
+user.email=rafsan800594@gmail.com
+
+uiu@LDEeee MINGW64 /
+$
+
+
+
+uiu@LDEeee MINGW64 /
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Rafsan
+user.email=rafsan800594@gmail.com
+
+uiu@LDEeee MINGW64 /
+$ ^C
+
+uiu@LDEeee MINGW64 /
+$ git config user.name
+Rafsan
+
+uiu@LDEeee MINGW64 /
+$ git config user.email
+rafsan800594@gmail.com
+
+uiu@LDEeee MINGW64 /
+$
+
+
+
+
+
+
+###############################################
+
+git config --global user.name "Rafsan"
+git config --global user.email "rafsan800594@gmail.com"
+
+
+
+git add A.txt
+
+git commit -m "A.txt ফাইল আপডেট করা হলো"
+
+git status
+
+git diff A.txt
+
+
+
+git restore A.txt
+
+
+
+
+

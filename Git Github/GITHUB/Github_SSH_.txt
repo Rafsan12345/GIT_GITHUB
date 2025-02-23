@@ -1,0 +1,33 @@
+
+uiu@LDEeee MINGW64 /
+$ ssh-keygen -t rsa -b 4096 -C "hasemi33-849@diu.edu.bd"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/uiu/.ssh/id_rsa):
+Created directory '/c/Users/uiu/.ssh'.
+Enter passphrase for "/c/Users/uiu/.ssh/id_rsa" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/uiu/.ssh/id_rsa
+Your public key has been saved in /c/Users/uiu/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:QLXhfxE/OzSkUxZioMuC9aIzWjx9eYe6a0ZTm4ClSU0 hasemi33-849@diu.edu.bd
+The key's randomart image is:
++---[RSA 4096]----+
+|      .+E ..+ =. |
+|     ...o+ . O   |
+|     .o=+   + =  |
+|     o++.o.  + + |
+|    . o So.o. o  |
+|   . o oo.oo   . |
+|    B ..o.o .    |
+|   o + .oo .     |
+|  .    o+o       |
++----[SHA256]-----+
+
+
+uiu@LDEeee MINGW64 /
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa 
+
+AAAAB3NzaC1yc2EAAAADAQABAAACAQCswNEnyZfevFW52jQQISjcrs3fleECRrYqzBJnbDxrghZYUS373s7hK2ssc+nSnpkYfzMpok1R1mV08y770ZpqXuJ4t6IyMTywpQt9PrdLJEgcBgjSQY5LBcSn6rpeU9Grta9Fu5ktgGX9f6lHPddOzVrSARDerkKmpaSa8EyaBPgxOOgUsPlIWFhUjyPfRVODShpb70/LVzSikZLwJvBtx6BZrmsfgEf4GEWkpV5E+NScG+N7KaNWflBPeNUD/WjJFE62lZSNbFCmPRhzOTHjEByCKuSr355rozsCFeEN47i5OV5CPJpFtQco2kMfOUCIuVN7o5RZlBtQCkahVFERkhgeqhV8BSHAKEg/X5XdisYwz6bTzJNzbptaCftWAistIUVeUGBrh83vqH6WNH1him4Bh6BH/gXbxS45UjGA9R3G3TJ6ceg+UCUAzQlYbunEy/qFnEGLJYEDdYvL2A7P1lfNsDiALhkeOeCdfj4PTEjz+BexDWsCd2j9DdeYfJMc5Bmmu+z7nY4Y4jh9uXhTHlIp6PqNey+c1/WuVLAIViCGyFlnsR2StreJ4zfLbK7tS0w2wxNLW7og8bqodtFE7MMkKLbb1yqRUMI8Pe+p3oRoeG2uwERgg6tcbNWh1/KPDNB4/WfYHfG4Lq2SICSYogcjv/aW2+a/aYljXuUSpw== hasemi33-849@diu.edu.bd
+
+

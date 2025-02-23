@@ -1,0 +1,55 @@
+
+
+git init
+git config --global user.name "Rafsan"
+git config --global user.email "rafsan800594@gmail.com"
+
+#############################
+
+git init
+git add A.txt
+
+git commit -m "A.txt ফাইল আপডেট করা হলো"
+
+
+##########################
+
+
+git add A.txt
+git status
+
+git diff A.txt
+
+
+
+
+git log
+
+
+
+git add main.c
+git commit -m "PUB"
+
+
+
+
+git restore A.txt
+
+
+
+
+############################
+
+Derect 
+git add main.c
+git commit -m "PUB"
+
+#####################
+
+
+
+git checkout 602f399
+
+
+
+
