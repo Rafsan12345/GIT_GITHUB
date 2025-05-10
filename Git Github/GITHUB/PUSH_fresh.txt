@@ -1,4 +1,42 @@
 
+##########################################################################################
+
+
+git init
+
+
+git add index.html
+
+
+git commit -m "First commit with index.html"
+
+
+git remote add origin https://github.com/Rafsan12345/Webside.git
+
+
+git branch -M main
+
+
+git push -u origin main
+
+
+
+
+
+
+####################################################################################
+SSH Key Generation ->> paste this git-bash command line 
+
+ssh-keygen -t rsa -b 4096 -C "hasemi33-849@diu.edu.bd"
+
+
+
+#####################################################################################
+
+
+CMD Line Result ->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
 DCL@TeamOs-PC MINGW64 ~
 $ ssh-keygen -t rsa -b 4096 -C "hasemi33-849@diu.edu.bd"
 Generating public/private rsa key pair.
@@ -51,9 +89,58 @@ DCL@TeamOs-PC MINGW64 ~
 $ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCrUGkNkH95phCwcRN8+FmuHzAr2O8c/qFC0h+eNgP8NOdIS48cbBcBNZkQAayQqC15FgpM0Na8siI2buBPbnsvEradnYh5ckoiCDm6i2nDPugc6gyMqgaWKw9Lq6+SQoIOStLXQ7qKIqimX1gTxvVhc94mNBOqheiLCRys5Kp93942Cwp3LT1Jed/lAbKsbB05TNtplo5xwkG3zrG76+/P5+uqjeGQlRbLCx+hcWRisOwtgAHVZOLTF7+pbYNZRge/zP1CDG9KuniKkvUtbzC/UKiQacfAWtcXIoZlkCF1ycuxWL0PjkboBwOxzWe/wDchxJiSS0hsihip3tzs7Cb/4jbdshXulU/ozOhudGsUb7MsY2qahAAnAOl7R1plfArLhhRcEQStEILUTHKaz0nvOJ/r/wQT2SXMhgpaXvvVa1GVRAaRFOMkcEFzXAgLXkAsJRcmq+ykWZjJk/acXr8XLUNJzv/z1/4KY9P/EfWmGKSL94F4exGWVq76PDfrpH8b6uiKQhOE9SdR2YAdo8w/PQTr+jjncb+1c2a5yKINwn8VkG2to3Q5txQlfhTtNl4y0J19ddWnDxT0ceJeeuwuymggEppRakT21xJMKpI4Dicc/0I1nhJjaqaz3+LQwDk4ZFEZtDsRCWCpf2SPoSK1BQjEpsWhUxyq8Nni0QnJDw== hasemi33-849@diu.edu.bd
 
-DCL@TeamOs-PC MINGW64 ~
-$ ^C
+###################################################################################################################################################################
+DCL@TeamOs-PC MINGW64 ~/Desktop/HTML/graph
+$ git init
+Initialized empty Git repository in C:/Users/DCL/Desktop/HTML/graph/.git/
 
-DCL@TeamOs-PC MINGW64 ~
+DCL@TeamOs-PC MINGW64 ~/Desktop/HTML/graph (master)
+$ git add index.html
+
+DCL@TeamOs-PC MINGW64 ~/Desktop/HTML/graph (master)
+$ git commit -m "First commit with index.html"
+[master (root-commit) bfc797c] First commit with index.html
+ 1 file changed, 83 insertions(+)
+ create mode 100644 index.html
+
+DCL@TeamOs-PC MINGW64 ~/Desktop/HTML/graph (master)
+$ git remote add origin https://github.com/Rafsan12345/Webside.git
+
+DCL@TeamOs-PC MINGW64 ~/Desktop/HTML/graph (master)
+$ git branch -M main
+
+DCL@TeamOs-PC MINGW64 ~/Desktop/HTML/graph (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.10 KiB | 561.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Rafsan12345/Webside.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+DCL@TeamOs-PC MINGW64 ~/Desktop/HTML/graph (main)
 $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
