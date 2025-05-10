@@ -1,0 +1,59 @@
+
+DCL@TeamOs-PC MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "hasemi33-849@diu.edu.bd"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/DCL/.ssh/id_rsa):
+/c/Users/DCL/.ssh/id_rsa already exists.
+Overwrite (y/n)?
+
+DCL@TeamOs-PC MINGW64 ~
+$ ^C
+
+DCL@TeamOs-PC MINGW64 ~
+$ DCL@TeamOs-PC MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "hasemi33-849@diu.edu.bd"
+Generating public/private rsa key pair.
+Enter fil
+bash: DCL@TeamOs-PC: command not found
+bash: $: command not found
+bash: Generating: command not found
+bash: Enter: command not found
+
+DCL@TeamOs-PC MINGW64 ~
+$ ^C
+
+DCL@TeamOs-PC MINGW64 ~
+$ ssh-keygen -t rsa -b 4096 -C "hasemi33-849@diu.edu.bd"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/DCL/.ssh/id_rsa):
+/c/Users/DCL/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/DCL/.ssh/id_rsa
+Your public key has been saved in /c/Users/DCL/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:Vt2ICsDfk5kE3ex8UoaFFZZ7rvwKNI13IKDhpvgCNUw hasemi33-849@diu.edu.bd
+The key's randomart image is:
++---[RSA 4096]----+
+|  E.. oo.o ==o   |
+| o  .o oo.=++o   |
+|  +  .=o *+o+..  |
+| . o o..*o++o..  |
+|. . .   S.+ooo.  |
+| . .   . . o ..  |
+|  . .     .. .   |
+|   .       .o    |
+|            .o.  |
++----[SHA256]-----+
+
+DCL@TeamOs-PC MINGW64 ~
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCrUGkNkH95phCwcRN8+FmuHzAr2O8c/qFC0h+eNgP8NOdIS48cbBcBNZkQAayQqC15FgpM0Na8siI2buBPbnsvEradnYh5ckoiCDm6i2nDPugc6gyMqgaWKw9Lq6+SQoIOStLXQ7qKIqimX1gTxvVhc94mNBOqheiLCRys5Kp93942Cwp3LT1Jed/lAbKsbB05TNtplo5xwkG3zrG76+/P5+uqjeGQlRbLCx+hcWRisOwtgAHVZOLTF7+pbYNZRge/zP1CDG9KuniKkvUtbzC/UKiQacfAWtcXIoZlkCF1ycuxWL0PjkboBwOxzWe/wDchxJiSS0hsihip3tzs7Cb/4jbdshXulU/ozOhudGsUb7MsY2qahAAnAOl7R1plfArLhhRcEQStEILUTHKaz0nvOJ/r/wQT2SXMhgpaXvvVa1GVRAaRFOMkcEFzXAgLXkAsJRcmq+ykWZjJk/acXr8XLUNJzv/z1/4KY9P/EfWmGKSL94F4exGWVq76PDfrpH8b6uiKQhOE9SdR2YAdo8w/PQTr+jjncb+1c2a5yKINwn8VkG2to3Q5txQlfhTtNl4y0J19ddWnDxT0ceJeeuwuymggEppRakT21xJMKpI4Dicc/0I1nhJjaqaz3+LQwDk4ZFEZtDsRCWCpf2SPoSK1BQjEpsWhUxyq8Nni0QnJDw== hasemi33-849@diu.edu.bd
+
+DCL@TeamOs-PC MINGW64 ~
+$ ^C
+
+DCL@TeamOs-PC MINGW64 ~
+$
+
