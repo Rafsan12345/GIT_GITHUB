@@ -1,4 +1,11 @@
 
+####################################################################################
+SSH Key Generation ->> paste this git-bash command line 
+
+ssh-keygen -t rsa -b 4096 -C "hasemi33-849@diu.edu.bd"
+
+
+
 uiu@LDEeee MINGW64 /
 $ ssh-keygen -t rsa -b 4096 -C "hasemi33-849@diu.edu.bd"
 Generating public/private rsa key pair.
