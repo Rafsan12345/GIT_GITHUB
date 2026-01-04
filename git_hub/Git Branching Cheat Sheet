@@ -1,0 +1,112 @@
+🌿 Git Branching Cheat Sheet (Real Example)
+Project structure (আপনার পিসিতে)
+git_hub/
+ └── main.c
+
+Current branch
+git branch
+* master
+
+1️⃣ নতুন branch বানানো or git checkout test or git checkout master
+
+git checkout -b test
+
+
+Output:
+
+Switched to a new branch 'test'
+
+
+এখন test branch এ আছেন
+
+Git internally main.c এর copy of version track করছে
+
+2️⃣ test branch এ main.c edit করা
+
+main.c (before)
+
+#include <stdio.h>
+
+int main() {
+    printf("Hello from master\n");
+    return 0;
+}
+
+
+main.c (test branch edit)
+
+#include <stdio.h>
+
+int main() {
+    printf("Hello from test branch!\n");  // branch change
+    return 0;
+}
+
+3️⃣ change stage & commit
+git add main.c
+git commit -m "Test branch: added print message"
+
+
+Output:
+
+[test 1a2b3c] Test branch: added print message
+ 1 file changed, 1 insertion(+)
+
+4️⃣ master branch এ ফিরে যাওয়া
+git checkout master
+
+
+master এ main.c আগের মতো থাকবে:
+
+printf("Hello from master\n");
+
+
+No extra file — same folder
+
+5️⃣ test branch এ আবার ফিরে যাওয়া
+git checkout test
+
+
+main.c দেখাবে:
+
+printf("Hello from test branch!\n");
+
+6️⃣ Merge test → master (যদি ঠিক থাকে)
+git checkout master
+git merge test
+
+
+Output:
+
+Updating 1a2b3c..4d5e6f
+Fast-forward
+ main.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+
+master branch এ এখন test branch change এসেছে
+
+7️⃣ Optional: branch delete
+git branch -d test
+
+
+branch gone, master safe
+
+🧾 Cheat Sheet Table (Embedded Example)
+Step	Command	Purpose	Result
+New branch	git checkout -b test	experiment	new branch created
+Check branch	git branch	see current branch	* test
+Edit file	open main.c	change code	local change in branch
+Stage change	git add main.c	prepare commit	staged
+Commit	git commit -m "msg"	save changes	commit created in branch
+Switch branch	git checkout master	go back	main.c reverts
+Merge	git merge test	bring changes	master updated
+Delete branch	git branch -d test	clean up	branch removed
+
+💡 Important Embedded Tip
+
+master → stable firmware
+
+branch → new driver / bug fix / test
+
+physical file same, Git internally versioned
