@@ -1,0 +1,113 @@
+📌 Git & GitHub Cheat Sheet (Quick Reference)
+🔰 1️⃣ Repository শুরু করা
+git init                    # নতুন git repo
+git clone URL               # remote repo copy
+
+📂 2️⃣ Status & Info
+git status                  # বর্তমান অবস্থা
+git log                     # full history
+git log --oneline           # short history
+git log --oneline --graph   # branch view
+
+➕ 3️⃣ Stage (Track)
+git add main.c              # single file
+git add .                   # সব পরিবর্তন
+git add -p                  # partial add
+
+💾 4️⃣ Commit
+git commit -m "message"
+git commit --amend          # শেষ commit edit
+
+🔄 5️⃣ Diff (Change দেখা)
+git diff                    # unstaged change
+git diff --staged           # staged change
+
+🌍 6️⃣ Remote (GitHub)
+git remote -v
+git remote add origin URL
+git push -u origin main
+git pull
+
+🌿 7️⃣ Branch
+git branch                  # list
+git branch feature_uart     # create
+git checkout feature_uart
+git checkout -b new_branch  # create + switch
+git merge feature_uart
+
+🧑‍🤝‍🧑 8️⃣ Team / Contribution
+git shortlog -s -n
+git blame main.c
+git log --author="Name"
+
+🧹 9️⃣ Undo / Fix
+git restore file.c          # undo change
+git restore --staged file.c # unstage
+git reset --hard HEAD       # DANGER
+
+🚫 🔒 1️⃣0️⃣ Ignore
+.gitignore
+git rm -r --cached build/
+
+🧠 Embedded Project Must-Use
+git status
+git add main.c
+git commit -m "Day end update"
+git push
+
+🧾 One-Line Daily Workflow
+git status → git add → git commit → git push
+
+
+
+
+🧠 Full First-Time Flow (One Shot)
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/Rafsan12345/GIT_GITHUB.git
+git push -u origin main
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+PS C:\Users\DCL\Desktop\git_hub> git blame main.c
+^c320681 (Hasemi            2026-01-04 08:38:47 +0600  1) #include <stdio.h>
+^c320681 (Hasemi            2026-01-04 08:38:47 +0600  2) int main() {
+^c320681 (Hasemi            2026-01-04 08:38:47 +0600  3)     printf("Hello, World!\n");
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600  4)     printf("Hello, EEE!\n");
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600  5)     printf("Hello, cse!\n");
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600  6)     for (size_t i = 0; i < 5; i++)
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600  7)     {
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600  8)         printf("Hello, World!!! %zu\n", i);
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600  9)         printf("Hello, EEE!!! %zu\n", i);
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600 10)         printf("Hello, cse!!! %zu\n", i);
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600 11)
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600 12)         /* code */
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600 13)     }
+00000000 (Not Committed Yet 2026-01-04 08:51:20 +0600 14)
+^c320681 (Hasemi            2026-01-04 08:38:47 +0600 15)     return 0;
+^c320681 (Hasemi            2026-01-04 08:38:47 +0600 16) }
+PS C:\Users\DCL\Desktop\git_hub> 
+
+
+PS C:\Users\DCL\Desktop\git_hub> git log -1 main.c
+commit c320681b202059f04e2649c02f45dc80cb7aa786 (HEAD -> master)
+Author: Hasemi <hasemi33-849@diu.edu.bd>
+Date:   Sun Jan 4 08:38:47 2026 +0600
+
+    04-01-2026
+PS C:\Users\DCL\Desktop\git_hub> 
+
+
+.....................................................
+
+🧠 Quick Summary
+কী জানতে চান	Command
+Line-by-line last modify	git blame file.c
+Specific line range	git blame -L x,y file.c
+Function history	git log -L :func:file.c
+Last file modify	git log -1 file.c
+Last commit diff	git show
