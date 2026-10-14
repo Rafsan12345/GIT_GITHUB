@@ -1,0 +1,38 @@
+commit 08832f1bcca3064a3b9a2bbb0481b155afbb7c5a
+Author:     Rafsan <rafsan800594@gmail.com>
+AuthorDate: Tue Oct 13 13:12:05 2026 +0600
+Commit:     Rafsan <rafsan800594@gmail.com>
+CommitDate: Tue Oct 13 13:12:05 2026 +0600
+
+    Add main.c
+
+diff --git a/main.c b/main.c
+index 7284ab4..2a56bdc 100644
+--- a/main.c
++++ b/main.c
+@@ -1 +1,5 @@
+-aaaa
+\ No newline at end of file
++int main()
++{
++    int a = 10;
++    return 0;
++}
+\ No newline at end of file
+
+commit 1e5899727f00d877e9fb674df6b3761a1e3e7258
+Author:     Rafsan <rafsan800594@gmail.com>
+AuthorDate: Tue Oct 13 13:01:29 2026 +0600
+Commit:     Rafsan <rafsan800594@gmail.com>
+CommitDate: Tue Oct 13 13:01:29 2026 +0600
+
+    main.c upadated
+
+diff --git a/main.c b/main.c
+new file mode 100644
+index 0000000..7284ab4
+--- /dev/null
++++ b/main.c
+@@ -0,0 +1 @@
++aaaa
+\ No newline at end of file
