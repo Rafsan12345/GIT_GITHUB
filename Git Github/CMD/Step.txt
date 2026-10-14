@@ -52,4 +52,9 @@ git checkout 602f399
 
 
 
+#######################
+History save
 
+git log --oneline > history.txt
+git log --oneline > history.txt
+git log --oneline > history.txt
